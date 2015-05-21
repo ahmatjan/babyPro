@@ -1,0 +1,21 @@
+PODS:
+  - Mantle (2.0):
+    - Mantle/extobjc (= 2.0)
+  - Mantle/extobjc (2.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - Mantle (~> 2.0)
+  - ReactiveCocoa (~> 2.3)
+
+SPEC CHECKSUMS:
+  Mantle: d7c75b6fb789b20f7ae30cd0d09435fe545896ff
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+COCOAPODS: 0.37.0
