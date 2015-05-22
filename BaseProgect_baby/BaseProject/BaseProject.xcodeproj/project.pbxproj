@@ -19,6 +19,11 @@
 		BC24F3121B0DD8D500CDFA25 /* BACoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = BC24F3111B0DD8D500CDFA25 /* BACoreData.m */; };
 		BC24F3151B0DDC0600CDFA25 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC24F3131B0DDC0600CDFA25 /* Model.xcdatamodeld */; };
 		BC24F31C1B0DEA5700CDFA25 /* NSObject+BAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC24F31B1B0DEA5700CDFA25 /* NSObject+BAExtensions.m */; };
+		BC62834C1B0EDE3D00956FA4 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62834B1B0EDE3D00956FA4 /* BaseModel.m */; };
+		BC62834E1B0EE77E00956FA4 /* accountResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BC62834D1B0EE77E00956FA4 /* accountResponse.json */; };
+		BC6283541B0EE84C00956FA4 /* BABAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6283531B0EE84C00956FA4 /* BABAccount.m */; };
+		BC6283571B0EE86E00956FA4 /* BABUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6283561B0EE86E00956FA4 /* BABUser.m */; };
+		BC62835A1B0EEA7C00956FA4 /* BABMsgSrcs.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6283591B0EEA7C00956FA4 /* BABMsgSrcs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +59,20 @@
 		BC24F3081B0DB94E00CDFA25 /* NotificationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationMacro.h; sourceTree = "<group>"; };
 		BC24F3091B0DB94E00CDFA25 /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		BC24F30A1B0DB94E00CDFA25 /* VendorMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorMacro.h; sourceTree = "<group>"; };
-		BC24F30B1B0DBA6D00CDFA25 /* Baby-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Baby-Prefix.pch"; sourceTree = "<group>"; };
 		BC24F3101B0DD8D500CDFA25 /* BACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACoreData.h; sourceTree = "<group>"; };
 		BC24F3111B0DD8D500CDFA25 /* BACoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACoreData.m; sourceTree = "<group>"; };
 		BC24F3141B0DDC0600CDFA25 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		BC24F31A1B0DEA5700CDFA25 /* NSObject+BAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BAExtensions.h"; sourceTree = "<group>"; };
 		BC24F31B1B0DEA5700CDFA25 /* NSObject+BAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BAExtensions.m"; sourceTree = "<group>"; };
+		BC62834A1B0EDE3D00956FA4 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		BC62834B1B0EDE3D00956FA4 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		BC62834D1B0EE77E00956FA4 /* accountResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accountResponse.json; sourceTree = "<group>"; };
+		BC6283521B0EE84C00956FA4 /* BABAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BABAccount.h; sourceTree = "<group>"; };
+		BC6283531B0EE84C00956FA4 /* BABAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BABAccount.m; sourceTree = "<group>"; };
+		BC6283551B0EE86E00956FA4 /* BABUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BABUser.h; sourceTree = "<group>"; };
+		BC6283561B0EE86E00956FA4 /* BABUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BABUser.m; sourceTree = "<group>"; };
+		BC6283581B0EEA7C00956FA4 /* BABMsgSrcs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BABMsgSrcs.h; sourceTree = "<group>"; };
+		BC6283591B0EEA7C00956FA4 /* BABMsgSrcs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BABMsgSrcs.m; sourceTree = "<group>"; };
 		E1F7A1768129BB6EC82D4CB5 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +128,7 @@
 		BC24F2D71B0DB7DD00CDFA25 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				BC62834D1B0EE77E00956FA4 /* accountResponse.json */,
 				BC24F30F1B0DD87400CDFA25 /* Services */,
 				BC24F3011B0DB92700CDFA25 /* BaseClass */,
 				BC24F3021B0DB94E00CDFA25 /* Util */,
@@ -126,6 +140,12 @@
 				BC24F2E51B0DB7DD00CDFA25 /* Images.xcassets */,
 				BC24F2E71B0DB7DD00CDFA25 /* LaunchScreen.xib */,
 				BC24F2D81B0DB7DD00CDFA25 /* Supporting Files */,
+				BC6283521B0EE84C00956FA4 /* BABAccount.h */,
+				BC6283531B0EE84C00956FA4 /* BABAccount.m */,
+				BC6283551B0EE86E00956FA4 /* BABUser.h */,
+				BC6283561B0EE86E00956FA4 /* BABUser.m */,
+				BC6283581B0EEA7C00956FA4 /* BABMsgSrcs.h */,
+				BC6283591B0EEA7C00956FA4 /* BABMsgSrcs.m */,
 			);
 			path = BaseProject;
 			sourceTree = "<group>";
@@ -135,7 +155,6 @@
 			children = (
 				BC24F2D91B0DB7DD00CDFA25 /* Info.plist */,
 				BC24F2DA1B0DB7DD00CDFA25 /* main.m */,
-				BC24F30B1B0DBA6D00CDFA25 /* Baby-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,6 +181,8 @@
 			children = (
 				BC24F2FE1B0DB91600CDFA25 /* BAObject.h */,
 				BC24F2FF1B0DB91600CDFA25 /* BAObject.m */,
+				BC62834A1B0EDE3D00956FA4 /* BaseModel.h */,
+				BC62834B1B0EDE3D00956FA4 /* BaseModel.m */,
 			);
 			name = BaseClass;
 			sourceTree = "<group>";
@@ -275,6 +296,7 @@
 		BC24F2CD1B0DB7DD00CDFA25 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BAB;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Renqianbei;
 				TargetAttributes = {
@@ -311,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC62834E1B0EE77E00956FA4 /* accountResponse.json in Resources */,
 				BC24F2E41B0DB7DD00CDFA25 /* Main.storyboard in Resources */,
 				BC24F2E91B0DB7DD00CDFA25 /* LaunchScreen.xib in Resources */,
 				BC24F2E61B0DB7DD00CDFA25 /* Images.xcassets in Resources */,
@@ -364,12 +387,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6283571B0EE86E00956FA4 /* BABUser.m in Sources */,
 				BC24F2E11B0DB7DD00CDFA25 /* ViewController.m in Sources */,
 				BC24F31C1B0DEA5700CDFA25 /* NSObject+BAExtensions.m in Sources */,
+				BC62834C1B0EDE3D00956FA4 /* BaseModel.m in Sources */,
 				BC24F2DE1B0DB7DD00CDFA25 /* AppDelegate.m in Sources */,
 				BC24F3121B0DD8D500CDFA25 /* BACoreData.m in Sources */,
 				BC24F2DB1B0DB7DD00CDFA25 /* main.m in Sources */,
 				BC24F3001B0DB91600CDFA25 /* BAObject.m in Sources */,
+				BC6283541B0EE84C00956FA4 /* BABAccount.m in Sources */,
+				BC62835A1B0EEA7C00956FA4 /* BABMsgSrcs.m in Sources */,
 				BC24F3151B0DDC0600CDFA25 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

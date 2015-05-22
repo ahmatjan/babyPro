@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ACA6F32B-563C-4772-9879-AA5D995F0C33</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BaseProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>62ED1AEBF03CF144411C1068DC2A7CF4EF99BD3C</key>
+		<string>https://github.com/Renqianbei/babyPro.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BaseProgect_baby/BaseProject/BaseProject.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>62ED1AEBF03CF144411C1068DC2A7CF4EF99BD3C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Renqianbei/babyPro.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>62ED1AEBF03CF144411C1068DC2A7CF4EF99BD3C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>62ED1AEBF03CF144411C1068DC2A7CF4EF99BD3C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E6%96%B0%E5%BB%BAbaby</string>
+		</dict>
+	</array>
+</dict>
+</plist>

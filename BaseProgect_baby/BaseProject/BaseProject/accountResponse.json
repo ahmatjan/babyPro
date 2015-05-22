@@ -1,0 +1,53 @@
+{
+    "code": 0,
+    "result": {
+        "account":{
+            "accountID": "9f8df3b3e680b93cdb03139f262ac812",
+            "accessToken": "c310d187",
+            "snsAccount": "",
+            "updated": 1398053321406,
+            "state"  : "closed",
+            "profile": {
+                "name": "才优",
+                "remarkName": "才优",
+                "domains":"163.com, baidu.com",
+                "avatarPrefix": "http://phavatar.qiniudn.com/",
+                "avatar": "dfc63e62e2db56f7aca33278f8fb2a29.png",
+                "sigAvatar": true,
+                "company": "才优人力资源集团",
+                "department": "总裁办<hello>",
+                "position": "总裁",
+                "phone": "13594671357",
+                "extra": "iahcuoy.com",
+                "updated": 1397880070989,
+                "avatarUpdated": 1396232219642,
+                "basicUpdated": 1388208640570,
+                "sigUpdated": 1399179614183
+            },
+            "msgSrcs":[{
+                      "sourceID":"163.com",
+                      "type": "email",
+                      "authId": "iahcuoy@163.com",
+                      "authPwd": "ic741852",
+                      "authName" : "xxx",
+                      "authConn":{
+                      "in":{
+                      "protocol":"imap",
+                      "secure" : "tls",
+                      "host" : "imap.163.com",
+                      "port" : 993
+                      },
+                      "out":{
+                      "protocol":"smtp",
+                      "secure" : "tls",
+                      "host" : "smtp.163.com",
+                      "port" : 994
+                      }
+                      
+                }
+                     
+            }]
+
+        }
+    }
+}

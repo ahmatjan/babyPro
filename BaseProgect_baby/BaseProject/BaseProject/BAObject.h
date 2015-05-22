@@ -7,28 +7,33 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
+#import "BaseModel.h"
+@interface BAObject : BaseModel
 
-@interface BAObject : NSObject
 
-//可以被子类重写
--(NSString *)modelKeyID;
+//存取数据库唯一标识，根据需要子类确定
+-(NSString *)keyID;
 
 //从数据库获取对应类的数组
 
-+ (NSArray *)ModelsWithKey:(NSString *)key andValue:(id)object;
++ (NSArray *)searchforKey:(NSString *)key Value:(id)object;
 
-+ (NSArray *)ModelsWithPredicate:(NSPredicate *)predicate;
++ (NSArray *)searchforPredicate:(NSPredicate *)predicate;
 
 //只有设置了 modelkey 才会被保存
 - (void)save;
+
+- (void)deleteself;
+- (void)delete_key:(NSString*)key value:(NSString*)value;
 
 /**
  *  删除内容根据predicate
  *
  *  @param predicate 条件
  */
-+(void)deleteModelWithPredicate:(NSPredicate *)predicate;
++(void)deleteforPredicate:(NSPredicate *)predicate;
 
-+(int)modelsCount:(NSPredicate*)predicate;
++(int)localNums:(NSPredicate*)predicate;
 
 @end

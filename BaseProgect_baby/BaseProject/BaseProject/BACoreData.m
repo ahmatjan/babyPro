@@ -10,7 +10,6 @@
 #define SQLITE_DB_NAME   @"bacoreDataDB.sqlite"
 
 #import "BACoreData.h"
-#import <CoreData/CoreData.h>
 
 @interface BACoreData()
 @property (nonatomic, strong) NSManagedObjectContext *context;
@@ -111,6 +110,36 @@
     
 }
 
+
+-(NSArray*)fetch:(NSString *)entityName
+            sort:(NSArray *)sortDescriptors
+       predicate:(NSPredicate*)predicate
+ fetchResultType:(NSFetchRequestResultType)fetchResultType{
+
+    // Init a fetch request
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:self.context];
+    [fetchRequest setEntity:entity];
+    [fetchRequest setResultType:fetchResultType];
+    
+    if (sortDescriptors)
+    {
+        [fetchRequest setSortDescriptors:sortDescriptors];
+    }
+    if (predicate)
+    {
+        fetchRequest.predicate = predicate;
+    }
+    NSError *error;
+    NSArray *objects = [self.context executeFetchRequest:fetchRequest error:&error];
+    
+    
+    return objects ;
+}
+
+
+
+
 -(NSArray*)fetch:(NSString *)entityName
          sortKey:(NSString *)key
        ascending:(BOOL)asc
@@ -155,6 +184,14 @@
     [self save];
 }
 
+-(void)deleteObject:(NSManagedObject*)obj
+{
+    if (obj)
+    {
+        [[self _manageObjectcontext] deleteObject:obj];
+    }
+}
+
 -(void)deleteAllObjects:(NSString*)entityName
 {
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -186,7 +223,7 @@
     
     NSString * dirPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/DataBase"];
 //    NSString * dirPath11 =  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] ;
-    
+    [self _manageObjectcontext];
     NSFileManager *fm = [NSFileManager defaultManager];
     BOOL isDirectory = NO;
     BOOL exists = [fm fileExistsAtPath:dirPath isDirectory:&isDirectory];
@@ -214,7 +251,7 @@
     NSPersistentStore * returnRes = [[self _persistentStoreCoordinator] addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:options error:&error];
     
     if (returnRes) {
-        [[self context] setPersistentStoreCoordinator:[self _persistentStoreCoordinator]];
+        [[self _manageObjectcontext] setPersistentStoreCoordinator:[self _persistentStoreCoordinator]];
         
         if (!bInitDB) {
             [self save];
